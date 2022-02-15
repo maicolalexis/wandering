@@ -7,10 +7,10 @@ class wardering:
 
         self,name = name
 
-class Comunwandering(borracho):
-    def __init__(self, name)
-    super().__init__(name)
+class Comunwandering(wardering):
+        def __init__(self, name):
+            super().__init__(name)
 
 
-    def walk(self):
-        return random.choice([(0,1), (0,-1), (1,0), (-1,0)])
+        def walk(self):
+            return random.choice([(0,3), (0,-3), (3,0), (-3,0)])
