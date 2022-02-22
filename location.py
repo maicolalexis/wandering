@@ -1,4 +1,4 @@
-class location:
+class Location:
     
     def __init__(self):
         self.location_wandering = {}
