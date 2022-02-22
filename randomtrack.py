@@ -2,7 +2,7 @@
 from wandering import Comunwandering
 from track import Track
 from location import Location
-from bokeh.plotting import figure, output_file,show
+from bokeh.plotting import figure, output_file, show
 
 
 def walking(location, wandering, step):
@@ -16,13 +16,13 @@ def walking(location, wandering, step):
 
 def simulate_walk(steps, number_attempts, type_wandering):
     wandering = type_wandering(name='Alirio')
-    origen = Location(0, 0)
+    origen = Track(0, 0)
     distances = []
 
     for _ in range(number_attempts):
-        track = Track()
-        track.add_wandering(wandering, origen)
-        simulate_walk = walking(track, wandering, steps)
+        location = Location()
+        location.add_wandering(wandering, origen)
+        simulations_walk = walking(location, wandering, steps)
         distances.append(round(simulations_walk, 1))
     return distances
 
