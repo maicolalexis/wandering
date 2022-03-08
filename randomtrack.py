@@ -11,7 +11,7 @@ def walking(location, wandering, step):
         location.move_wandering(wandering)
 
 
-    return beginning.distances(location.get_location(wandering))
+    return beginning.distance(location.get_location(wandering))
     
 
 def simulate_walk(steps, number_attempts, type_wandering):
@@ -27,8 +27,8 @@ def simulate_walk(steps, number_attempts, type_wandering):
     return distances
 
 def graph(x, y):
-    graphics = figure(title='camino del errante,' x_axis_label='pasos', y_axis_label='distancia')
-    graphics.line(x, y, legend='distancia')
+    graphics = figure(title='camino del errante',  x_axis_label='pasos',  y_axis_label='distancia')
+    graphics.line(x, y, legend_label='distancia')
     show(graphics)
 
 
@@ -49,5 +49,5 @@ def main(distances_walk, number_attempts, type_wandering):
 
 if __name__ == '__main__':
     distances_walk = [10,100,1000,10000]
-    number_attemps = 100
+    number_attempts = 100
     main(distances_walk, number_attempts, Comunwandering)
