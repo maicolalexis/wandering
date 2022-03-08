@@ -5,7 +5,7 @@ import random;
 class wardering:
     def __init__(self, name):
 
-        self,name = name
+        self.name = name
 
 class Comunwandering(wardering):
         def __init__(self, name):
