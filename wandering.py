@@ -12,10 +12,10 @@ class wardering:
     def posicion(self):
         return (self.x, self.y)
 
-    def distance_origin(self)
+    def distance_origin(self):
         return (self.x**2 + self.y**2)**5
 
-class Comunwandering(wardering):
+class ComunWandering(wardering):
         def __init__(self, name):
             super().__init__(name)
 
